@@ -1,0 +1,607 @@
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background: #EE6FA5;
+    overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero-section{
+    position: relative;
+    min-height: 100vh;
+    background: #EE6FA5;
+    overflow: hidden;
+}
+
+/* DOTS */
+.dots-overlay{
+    position: absolute;
+    inset: 0;
+    background-image: url("../assets/images/DOTS.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: 1;
+}
+
+/* NAVBAR */
+.navbar{
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+/* LOGO */
+.logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* NAV LINKS */
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* HERO CONTENT */
+.hero-content{
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+/* LEFT SIDE */
+.hero-left{
+    flex: 1;
+}
+
+.hero-left h1{
+    color: white;
+
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.05;
+
+    
+}
+
+/* RIGHT SIDE */
+.hero-right{
+    flex: 0.8;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3rem;
+
+    padding-top: 1rem;
+}
+
+/* TRUST ROW */
+.trust-row{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* AVATARS */
+.avatar-stack{
+    display: flex;
+}
+
+.avatar{
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 3px solid #EE6FA5;
+
+    margin-left: -15px;
+}
+
+.avatar:first-child{
+    margin-left: 0;
+}
+
+.avatar img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* TRUST TEXT */
+.trust-text{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* DESCRIPTION */
+.hero-description{
+    color: rgba(255,255,255,0.9);
+    padding: 0 50px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+
+    ;
+}
+
+/* STATS */
+.stats-row{
+    display: flex;
+    align-items: center;
+padding: 0 50px;
+    gap: 3rem;
+}
+
+/* EACH STAT */
+.stat-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stat-box h2{
+    color: white;
+
+    font-size: 4rem;
+    font-weight: 300;
+    padding-top: 1.5rem;
+    line-height: 1;
+}
+
+.stat-box p{
+    color: rgba(255,255,255,0.7);
+
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+
+/* client section===========================
+======================== */
+.clients-section{
+  margin-bottom:3rem ;
+}
+.clients-section p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+  
+    margin-bottom: 10px;
+}
+
+.clients-logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin:0 auto;
+    gap: 2rem;
+    padding: 2rem 0;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 30px;
+
+}
+
+
+/* ABOUT TEXT */
+.about-txt{
+    padding: 2rem 0;
+    margin: 4rem 0;
+}
+.about-txt p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    width: 85%;
+    margin: 0 auto;
+    text-align:start;
+}
+.trust-text{
+  margin: 40px 0;
+}
+/* COUNTS */
+.counts{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 20px auto;
+padding: 0 50px;
+    gap: 5rem;
+     background-color: rgba(255,255,255,0.1);
+    border-radius: 30px;
+}
+
+/* EACH COUNT */
+.count-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.count-box h2{
+    color: white;
+    font-size: 3.7rem;
+    font-weight: 600;
+    padding-top: 1.5rem;
+    line-height: 1;
+}
+
+.count-box p{
+    color: rgba(255,255,255,0.7);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* CARD SECTION=========================
+========================= */
+.Services{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  margin-top: 5rem;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+.card{
+  background-color: rgba(255,255,255,0.1);
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+
+}
+.card img{
+  width: 60px;
+  height: 60px;
+}
+.card h3{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.card p{
+  color: rgba(255,255,255,0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/* =========================================
+TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 765px){
+
+    /* NAVBAR */
+    .navbar{
+        width: 92%;
+        padding: 2rem 0;
+    }
+
+    .nav-links{
+        gap: 2rem;
+    }
+
+    .nav-links a{
+        font-size: 0.95rem;
+    }
+
+    /* HERO SECTION */
+    .hero-content{
+        flex-direction: column;
+        gap: 4rem;
+        padding-top: 3rem;
+    }
+
+    .hero-left,
+    .hero-right{
+        width: 100%;
+    }
+
+    .hero-left h1{
+        font-size: 4rem;
+        max-width: 100%;
+    }
+
+    .hero-right{
+        gap: 2rem;
+    }
+
+    .trust-row{
+        flex-wrap: wrap;
+    }
+
+    .trust-text{
+        font-size: 1.2rem;
+    }
+
+    .hero-description{
+        padding: 0;
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .stats-row{
+        padding: 0;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .stat-box h2{
+        font-size: 3.5rem;
+    }
+
+    .stat-box p{
+        font-size: 1rem;
+    }
+
+    /* CLIENT SECTION */
+    .clients-section{
+        width: 92%;
+        margin: auto;
+    }
+
+    .clients-logos{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .clients-logos img{
+        width: 70px;
+        object-fit: contain;
+    }
+
+    /* ABOUT */
+    .about-txt p{
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    /* COUNTS */
+    .counts{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        padding: 2rem;
+    }
+
+    .count-box h2{
+        font-size: 3rem;
+    }
+
+    /* SERVICES */
+    .cards{
+        grid-template-columns: 1fr;
+        width: 92%;
+        gap: 2rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+}
+
+
+
+/* =========================================
+MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 480px){
+
+    /* NAVBAR */
+    .navbar{
+        flex-direction: row;
+        gap: 1.5rem;
+        text-align: left;
+    }
+
+    .logo{
+        font-size: 1.7rem;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-links a{
+        font-size: 0.9rem;
+    }
+
+    /* HERO */
+    .hero-content{
+        width: 92%;
+        padding-top: 2rem;
+        gap: 3rem;
+    }
+
+    .hero-left h1{
+        font-size: 2.8rem;
+        line-height: 1.1;
+    }
+
+    .hero-right{
+        gap: 2rem;
+    }
+
+    /* TRUST */
+    .trust-row{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .avatar{
+        width: 65px;
+        height: 65px;
+    }
+
+    .trust-text{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    /* DESCRIPTION */
+    .hero-description{
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    /* STATS */
+    .stats-row{
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .stat-box h2{
+        font-size: 3rem;
+    }
+
+    .stat-box p{
+        font-size: 0.95rem;
+    }
+
+    /* CLIENT SECTION */
+    .clients-section p{
+        font-size: 0.95rem;
+        line-height: 1.6;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .clients-logos{
+        padding: 1.5rem;
+        border-radius: 20px;
+        gap: 1.5rem;
+    }
+
+    .clients-logos img{
+        width: 25px;
+        height: 25px;
+    }
+
+    /* ABOUT */
+    .about-txt{
+        margin: 3rem auto;
+        width: 100%;
+       
+    }
+    
+    .about-txt p{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* COUNTS */
+    .counts{
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .count-box h2{
+        font-size: 2rem;
+    }
+
+    .count-box p{
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    /* SERVICES */
+    .Services{
+        font-size: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .cards{
+        width: 92%;
+        gap: 1.5rem;
+    }
+
+    .card{
+        padding: 2rem 1.5rem;
+    }
+
+    .card img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .card h3{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .card p{
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+}
