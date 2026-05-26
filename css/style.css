@@ -1209,7 +1209,7 @@ MOBILE RESPONSIVE
 
 }
 
-@media (max-width: 380px){
+@media (max-width: 400px){
      .clients-logos{
         padding: 1.3rem;
     }
@@ -1230,6 +1230,31 @@ MOBILE RESPONSIVE
     .count-box p{
         text-align: center;
         font-size: 0.6rem;
+    }
+
+
+}
+@media (max-width: 345px){
+     .clients-logos{
+        padding: 1.2rem;
+    }
+    .clients-logos img{
+        width: 16px;
+        height: 16px;
+    }
+     /* COUNTS */
+    .counts{
+        padding: 0.5rem;
+        gap: 1.2rem;
+    }
+
+    .count-box h2{
+        font-size: 1.2rem;
+    }
+
+    .count-box p{
+        text-align: center;
+        font-size: 0.5rem;
     }
 
 
